@@ -47,7 +47,7 @@ const projects = [
     technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "ShadCN UI"],
     githubUrl: "#",
     liveUrl: "#",
-    image: "/api/placeholder/400/250"
+    image: "/portfolio_web.png"
   }
 ];
 
