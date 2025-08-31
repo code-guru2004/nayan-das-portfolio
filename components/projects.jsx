@@ -107,7 +107,7 @@ export default function Projects() {
               whileHover={{ y: -5 }}
               className="h-full"
             >
-              <Card className="h-full flex flex-col overflow-hidden group hover:shadow-xl transition-all duration-300 border-border/50 bg-stone-800">
+              <Card className="h-full flex flex-col overflow-hidden group hover:shadow-xl transition-all duration-300 border-border/50 dark:bg-stone-800">
                 <div className="aspect-video bg-muted relative overflow-hidden">
                   <img
                     src={project.image}
