@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ToastContainer } from "react-toastify";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {

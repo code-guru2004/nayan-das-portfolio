@@ -86,7 +86,7 @@ export default function Hero() {
 
           <motion.p
             variants={itemVariants}
-            className="text-lg text-muted-foreground mb-12 max-w-2xl"
+            className="text-lg text-muted-foreground mb-12 max-w-2xl "
           >
             I create beautiful, functional web experiences that make a difference.
             Currently specializing in React, Next.js, and modern web technologies.
