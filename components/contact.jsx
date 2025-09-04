@@ -33,13 +33,13 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const resp = await axios.post('/api/mail/send-mail',{
+      const resp = await axios.post('/api/mail/send-mail', {
         ...formData
       });
-      if(resp.data.success){
+      if (resp.data.success) {
         toast.success('Your message is sent successfully.', {
           position: "top-right",
           autoClose: 5000,
@@ -50,7 +50,7 @@ export default function Contact() {
           progress: undefined,
           theme: "colored",
           transition: Bounce,
-          });
+        });
       }
     } catch (error) {
       toast.error('Oops! Failed to send message.', {
@@ -63,8 +63,8 @@ export default function Contact() {
         progress: undefined,
         theme: "colored",
         transition: Bounce,
-        });
-    }finally{
+      });
+    } finally {
       setFormData({
         name: "",
         email: "",
@@ -72,7 +72,7 @@ export default function Contact() {
         message: ""
       })
     }
-    
+
   };
 
   const containerVariants = {
@@ -180,7 +180,7 @@ export default function Contact() {
                   <Button
                     variant="outline"
                     size="icon"
-                    className="rounded-sm h-10 w-10 bg-slate-700 hover:bg-slate-500 dark:bg-slate-500/50 dark:hover:bg-slate-500 text-slate-600 hover:text-white dark:text-slate-100 dark:hover:text-white transition-all duration-300 shadow-sm hover:shadow-md group/twitter"
+                    className="rounded-sm h-10 w-10 bg-slate-200 hover:bg-slate-500 dark:bg-slate-500/50 dark:hover:bg-slate-500 text-slate-600 hover:text-white dark:text-slate-100 dark:hover:text-white transition-all duration-300 shadow-sm hover:shadow-md group/twitter"
                   >
                     <BsTwitterX className="h-5 w-5 transition-transform duration-300 group-hover/twitter:scale-110" />
                   </Button>
@@ -203,7 +203,7 @@ export default function Contact() {
                     <Input
                       id="name"
                       name="name"
-                      
+
                       value={formData.name}
                       onChange={handleChange}
                       required
@@ -228,7 +228,7 @@ export default function Contact() {
                     <Input
                       id="subject"
                       name="subject"
-                      
+
                       value={formData.subject}
                       onChange={handleChange}
                       required
@@ -248,17 +248,17 @@ export default function Contact() {
                   </motion.div>
 
                   <motion.div variants={itemVariants}>
-  <Button 
-    type="submit" 
-    className="w-full group relative bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 dark:from-blue-700 dark:to-indigo-700 dark:hover:from-blue-600 dark:hover:to-indigo-600 text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 ease-in-out transform hover:-translate-y-0.5 shadow-md hover:shadow-lg overflow-hidden"
-    whileHover={{ scale: 1.02 }}
-    whileTap={{ scale: 0.98 }}
-  >
-    <span className="absolute inset-0 w-full h-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-    <BiMailSend className="size-6 mr-2 transition-transform duration-300 group-hover:scale-110" />
-    Send Message
-  </Button>
-</motion.div>
+                    <Button
+                      type="submit"
+                      className="w-full group relative bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 dark:from-blue-700 dark:to-indigo-700 dark:hover:from-blue-600 dark:hover:to-indigo-600 text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 ease-in-out transform hover:-translate-y-0.5 shadow-md hover:shadow-lg overflow-hidden"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      <span className="absolute inset-0 w-full h-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                      <BiMailSend className="size-6 mr-2 transition-transform duration-300 group-hover:scale-110" />
+                      Send Message
+                    </Button>
+                  </motion.div>
                 </form>
               </CardContent>
             </Card>
