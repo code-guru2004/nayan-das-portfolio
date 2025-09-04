@@ -15,7 +15,7 @@ export default function Home() {
     <main className="">
       <Navbar />
       <Hero />
-      <div className="fixed bottom-24 lg:bottom-16 right-8 lg:right-24 z-50">
+      <div className="fixed bottom-20 lg:bottom-16 right-5 lg:right-24 z-50">
         <a
           href="/Nayan_das_CV.pdf"
           download
