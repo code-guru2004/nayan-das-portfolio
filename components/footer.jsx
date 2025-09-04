@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-bold mb-2">John Doe</h3>
+            <h3 className="text-xl font-bold mb-2">Nayan Das<span className="text-3xl">.</span></h3>
             <p className="text-muted-foreground">
               Full Stack Developer & AI-ML Enthusiast
             </p>
@@ -49,7 +49,7 @@ export default function Footer() {
 
         <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} John Doe. All rights reserved.
+            © {currentYear} Nayan Das. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-muted-foreground">
             <Link href="#home" className="hover:text-foreground transition-colors">
