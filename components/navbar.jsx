@@ -67,8 +67,7 @@ export default function Navbar() {
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all group-hover:w-full"></span>
                 </motion.a>
               ))}
-              
-             
+
               {/* Theme Toggle */}
               <motion.button
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -152,7 +151,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 100 }}
             transition={{ type: "spring", stiffness: 120, damping: 20 }}
-            className="fixed bottom-0 left-0 right-0 z-50 block sm:hidden bg-stone-500 border-t shadow-lg"
+            className="fixed bottom-0 left-0 right-0 z-50 block sm:hidden bg-stone-100 dark:bg-stone-500 border-t shadow-lg"
           >
             <nav className="container mx-auto px-4 py-2">
               <div className="flex justify-between items-center text-sm font-medium">
