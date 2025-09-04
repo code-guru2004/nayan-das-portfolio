@@ -137,7 +137,7 @@ export default function Projects() {
                     className="group/code relative overflow-hidden border-border bg-transparent hover:bg-transparent"
                   >
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-600 to-indigo-600 opacity-0 group-hover/code:opacity-100 transition-opacity duration-300 -z-10" />
+                      <span className="absolute inset-0 w-full h-full bg-black opacity-0 group-hover/code:opacity-100 transition-opacity duration-300 -z-10" />
                       <FiGithub className="h-4 w-4 mr-2 transition-transform group-hover/code:text-white duration-300 group-hover/code:scale-110" />
                       <span className="text-foreground group-hover/code:text-white transition-colors duration-300">Code</span>
                     </a>
